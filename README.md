@@ -76,7 +76,7 @@ doc/*.txt
 doc/**/*.pdf
 ```
 
-> *O GitHub mantém uma lista bastante abrangente de bons arquivos .gitignore de exemplos para dezenas de projetos e idiomas em [**A collection of .gitignore templates**](https://github.com/github/gitignore)  se desejar um ponto de partida para seu projeto.*
+> *O GitHub mantém uma lista bastante abrangente de bons arquivos .gitignore de exemplos para dezenas de projetos e idiomas em [**A collection of .gitignore**](https://github.com/github/gitignore)  se desejar um ponto de partida para seu projeto.*
 
 
 ## COMANDOS GIT:
@@ -97,7 +97,7 @@ doc/**/*.pdf
 `$ git status [-s]/[--short]`
 - Verifica os status de seus arquivos de forma curta, se não tiver nenhum arquivo novo, modificado nada será retornado.
 
-- > Arquivos novos que não são rastreados têm um (??) do lado, novos arquivos que foram adicionados à área de stage têm um (A), arquivos modificados têm um (M), arquivos modificado, foi para o stage e foi modificado de novo, (MM). 
+> Arquivos novos que não são rastreados têm um (??) do lado, novos arquivos que foram adicionados à área de stage têm um (A), arquivos modificados têm um (M), arquivos modificado, foi para o stage e foi modificado de novo, (MM). 
 
 `$ git diff`
 - Compara o quê está no seu diretório de trabalho (Working Directory) com o quê está na Staging Área, exibe as linhas que foram adicionadas, removidas, retorna nada se os arquivos já foram adicionados a Staged ou se eles não tiverem nenhuma modificação.
@@ -108,12 +108,11 @@ doc/**/*.pdf
 `$ git commit`
 - Fazendo isso, será aberto seu editor de texto local, em qualquer linha do arquivo colocamos o quê será usado como título do commit, após fechar o editor, o Git criará seu commit;
 
-- > *Toda vez que você executa um commit, você está gravando um snapshot do seu projeto que você pode usar posteriormente para fazer comparações, ou mesmo restaurá-lo.*
+> *Toda vez que você executa um commit, você está gravando um snapshot do seu projeto que você pode usar posteriormente para fazer comparações, ou mesmo restaurá-lo.*
 
 `$ git commit [-a] [-m]`
 - Adicionando o parâmetro [-a] faz com que o Git prepare/Staged automaticamente cada arquivo modificado antes de fazer o commit.
-
-- > *Você não precisa correr git add, o parâmetro [-a] inclui apenas arquivos que foram alterados.*
+> *Não precisa correr git add, o parâmetro [-a] inclui apenas arquivos que foram alterados.*
 
 `$ git commit --amend` #TOP
 - Modifica o snapshot/commit mais recente, permite combinar alterações preparadas com o commit anterior em vez de criar um commit totalmente novo.
@@ -121,14 +120,14 @@ doc/**/*.pdf
 `$ git rm <file>`
 - Excluí o arquivo <file> do seu diretório de trabalho (Working Directory). Se o arquivo tiver sido alterado ou se já tiver adicionado à área de stage, você terá que forçar a remoção com a opção [-f].
 
-- > *Para remover um arquivo do Git (.git), você tem que removê-lo dos seus arquivos rastreados (mais precisamente, removê-lo da sua área de stage) e então fazer um commit.*
+> *Para remover um arquivo do Git (.git), você tem que removê-lo dos seus arquivos rastreados (mais precisamente, removê-lo da sua área de stage) e então fazer um commit.*
 
-- > *Se você simplesmente remover o arquivo do seu diretório de trabalho, ele aparecerá sob a área “Changes not staged for commit” (isto é, fora do stage), Mas, se você executar git rm, o arquivo será preparado para remoção (retirado do stage).*
+> *Se você simplesmente remover o arquivo do seu diretório de trabalho, ele aparecerá sob a área “Changes not staged for commit” (isto é, fora do stage), Mas, se você executar git rm, o arquivo será preparado para remoção (retirado do stage).*
 
 `$ git rm [--cached] <file>`
 - Excluí o arquivos <file> da staged mas mantém em seu diretório de trabalho (Working Directory).
 
-- > *Em outras palavras, você pode querer manter o arquivo no seu disco rígido, mas não deixá-lo mais sob controle do Git.*
+> *Em outras palavras, você pode querer manter o arquivo no seu disco rígido, mas não deixá-lo mais sob controle do Git.*
 
 `$ git mv <nome_arq_origem> <nome_arq_destino>`
 - Se você quiser renomear um arquivo no Git, use esse comando.
@@ -221,8 +220,13 @@ doc/**/*.pdf
 
 1. "Checkout" == Clonar repositório de alguém;
 
-- > *Um branch de tópico é um branch de curta duração que você cria e usa para um único recurso específico ou trabalho relacionado.*
+> *Um branch de tópico é um branch de curta duração que você cria e usa para um único recurso específico ou trabalho relacionado.*
 
-- > *“Tracking branch” são branches locais que têm um relacionamento direto com um branch remoto.*
+> *“Tracking branch” são branches locais que têm um relacionamento direto com um branch remoto.*
 
 2. **HEAD** em Git significa a ramificação/branch atual que você está.
+
+
+![imag](https://github.com/genilsonbick/rascunho-livro-pro-git/assets/104036619/6b2cb4ef-f4bb-4aca-99c4-f37c8250a785)
+
+
