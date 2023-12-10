@@ -147,7 +147,7 @@ doc/**/*.pdf
 `$ git remote`
 - Lista os nomes abreviados de cada repositório remoto que você especificou. 
 
-- > *Especifando o parâmetro [-v], mostra as URLs que o Git tem armazenado pelo nome abreviado a ser usado para ler ou gravar naquele repositório remoto.*
+> *Especifando o parâmetro [-v], mostra as URLs que o Git tem armazenado pelo nome abreviado a ser usado para ler ou gravar naquele repositório remoto.*
 
 `$ git remote add <shortname> <url>`
 - Adicionar um novo repositório remoto.
