@@ -25,6 +25,7 @@ Rascunho bastante avançado que eu obtive do livro "Pro Git", aqui contém algum
 #### Local Repository (.git Directory):
 🐧 0nde o Git armazena os metadados e o banco de dados de objetos de seu projeto. É esse arquivo que é copiado quando você clona um repositório.
 
+![estrutura_git](https://github.com/genilsonbick/rascunho-livro-pro-git/assets/104036619/25b8b0dc-4e9c-41b8-b360-8553983968a0)
 
 ## AS TRÊS SEÇÕES DE UM PROJETO GIT:
 #### Commited (Confirmado):
